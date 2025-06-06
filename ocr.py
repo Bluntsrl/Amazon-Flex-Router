@@ -39,7 +39,7 @@ def extract_addresses_from_image(image_path):
     
     # Define patterns for start and end markers and words to ignore
     start_pattern = re.compile(r'[A-Za-z0-9#-]+\s+.*(?:Road|Rd(?:\s?[A-Za-z]+)?|View|Avenue|Ave|Street|St\.|Blk|Drive|Dr\.?)', re.IGNORECASE)
-    end_pattern = re.compile(r'(Singapore|SG)', re.IGNORECASE)
+    end_pattern = re.compile(r'(Ohio)', re.IGNORECASE)
     ignore_pattern = re.compile(r'(Delivery|Scheduled|Parcels|Itinerary)', re.IGNORECASE)
     
     for line in lines:
